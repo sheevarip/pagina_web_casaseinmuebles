@@ -1,0 +1,117 @@
+RewriteEngine On
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
+
+#Las ETags son identificadores únicos que indican la última vez que se modificó un archivo.
+FileEtag MTime Size 
+
+#Quita el acceso al archivo htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+#CACHE IMPORTANTE SI HACES O ESTAS HACIENDO CAMBIOS A LA WEB DESACTIVA ESTO
+#<IfModule mod_expires.c>
+ #ExpiresActive On
+ #ExpiresDefault "access plus 600 seconds"
+ #ExpiresByType image/x-icon "access plus 604800 seconds"
+ #ExpiresByType image/jpg "access plus 604800 seconds"
+ #ExpiresByType image/jpeg "access plus 604800 seconds"
+ #ExpiresByType image/png "access plus 604800 seconds"
+ #ExpiresByType image/gif "access plus 604800 seconds"
+ #ExpiresByType application/x-shockwave-flash "access plus 604800 seconds"
+ #ExpiresByType text/css "access plus 604800 seconds"
+ #ExpiresByType text/javascript "access plus 604800 seconds"
+ #ExpiresByType application/x-javascript "access plus 604800 seconds"
+ #ExpiresByType text/html "access plus 600 seconds"
+ #ExpiresByType application/xhtml+xml "access plus 600 seconds" 
+#</ifmodule>
+<IfModule mod_headers.c>
+ <FilesMatch "\\.(ico|jpeg|jpg|png|gif|swf|css|js)$">
+ Header set Cache-Control "max-age=604800, public"
+ </FilesMatch>
+ <FilesMatch "\\.(x?html?|php)$">
+ Header set Cache-Control "max-age=600, private, must-revalidate"
+ </FilesMatch>
+</IfModule> 
+#COMPRIME LOS SIGUIENTES ARCHIVOS CON GZIP
+<IfModule mod_deflate.c> 
+# Filtramos los tipos de contenido 
+AddOutputFilterByType DEFLATE text/plain 
+AddOutputFilterByType DEFLATE text/html 
+AddOutputFilterByType DEFLATE text/xml 
+AddOutputFilterByType DEFLATE text/css 
+AddOutputFilterByType DEFLATE application/xml 
+AddOutputFilterByType DEFLATE application/xhtml+xml 
+AddOutputFilterByType DEFLATE application/rss+xml 
+AddOutputFilterByType DEFLATE application/javascript 
+AddOutputFilterByType DEFLATE application/x-javascript 
+AddOutputFilterByType DEFLATE application/x-httpd-php 
+AddOutputFilterByType DEFLATE application/x-httpd-fastphp 
+AddOutputFilterByType DEFLATE image/svg+xml 
+
+# Quitamos los navegadores que dan problemas con GZIP 
+BrowserMatch ^Mozilla/4 gzip-only-text/html 
+BrowserMatch ^Mozilla/4\.0[678] no-gzip 
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html 
+
+#Nos aseguramos de que los Proxy no muestren contenido equivocado 
+Header append Vary User-Agent env=!dont-vary 
+</IfModule> 
+
+ExpiresActive on
+ExpiresDefault "access plus 6 months"
+
+
+ErrorDocument 404 http://casaseinmueblesmorelos.com/404/
+ErrorDocument 403 http://casaseinmueblesmorelos.com/403/
+##ErrorDocument 403 /403.shtml
+##ErrorDocument 404 /404.shtml
+##ErrorDocument 500 /500.shtml
+##ErrorDocument 404 /modulos/404.php
+##ErrorDocument 403 /modulos/404.php
+##Options -Indexes
+
+##AddType text/html py
+##AddHandler cgi-script .py .pl .cgi
+##RewriteCond %{REQUEST_FILENAME} !-d
+##RewriteCond %{REQUEST_FILENAME}\.py -f
+##RewriteRule ^(.*)$ $1.py
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^casaseinmueblesmorelos.com [NC]
+RewriteRule ^(.*)$ http://www.casaseinmueblesmorelos.com/$1 [L,R=301]
+
+
+##AddOutputFilterByType DEFLATE text/html text/plain text/xml
+
+###INDEX -- 
+RewriteRule ^([a-zA-Z0-9-]*)/?$ index.php?Contenido=$1
+RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/?$ index.php?Contenido=$1&titulo=$2
+#RewriteRule propiedades/^([a-zA-Z0-9-]*)/?$ index.php?Contenido=$1
+#RewriteRule ^propiedades/([a-zA-Z0-9-]*)/?$ index.php?Contenido=descripcion_propiedades&propiedades=$1
+#RewriteRule ^b-depa/([a-zA-Z0-9-]*)/?$ index.php?Contenido=b-depa&nanuncio=$1
+#RewriteRule ^login/([a-zA-Z0-9-]*)/?$ index.php?Contenido=login&ag=$1
+#RewriteRule ^post/([a-zA-Z0-9-]*)/?$ index.php?Contenido=post&npost=$1
+#RewriteRule ^posteado-por/([a-zA-Z0-9-]*)/?$ index.php?Contenido=posteado-por&nusuarioadmin=$1
+#RewriteRule ^editar/([a-zA-Z0-9-]*)/?$ index.php?Contenido=editar&nanuncio=$1
+#RewriteRule ^estado/([a-zA-Z0-9-]*)/?$ index.php?Contenido=estado&nanuncio=$1
+#RewriteRule ^ciudad/([a-zA-Z0-9-]*)/?$ index.php?Contenido=ciudad&nanuncio=$1
+#RewriteRule ^editar/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/?$ index.php?Contenido=editar&nanuncio=$1&editado=$2
+#RewriteRule ^categoria/([a-zA-Z0-9-]*)/?$ index.php?Contenido=categoria&ncategoria=$1
+#RewriteRule ^q/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([0-9-]*)/([0-9-]*)/?$ index.php?Contenido=q&estado=$1&ciudad=$2&tipo=$3&bano=$4&internet=$5&aire=$6&pmin=$7&pmax=$8
+#RewriteRule ^q/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([0-9-]*)/([0-9-]*)/([^/]+)/?$ index.php?Contenido=q&estado=$1&ciudad=$2&tipo=$3&bano=$4&internet=$5&aire=$6&pmin=$7&pmax=$8&palabra=$9
+
+#RewriteRule ^q/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([0-9-]*)/([0-9-]*)/pagina/([0-9-]*)/?$ index.php?Contenido=q&estado=$1&ciudad=$2&tipo=$3&bano=$4&internet=$5&aire=$6&pmin=$7&pmax=$8&textp=pagina&pagina=$9
+#RewriteRule ^q/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([0-9-]*)/([0-9-]*)/([^/]+)/?$ index.php?Contenido=q&estado=$1&ciudad=$2&tipo=$3&bano=$4&internet=$5&aire=$6&pmin=$7&pmax=$8&palabra=$9
+
+#RewriteRule ^q/([a-zA-Z0-9-]*)/?$ index.php?Contenido=q&palabra=$1
+#RewriteRule ^q/([a-zA-Z0-9-]*)/pagina/([0-9-]*)/?$ index.php?Contenido=q&palabra=$1&textp=pagina&pagina=$2
+#RewriteRule ^blog/pagina/([0-9-]*)/?$ index.php?Contenido=blog&textp=pagina&pagina=$1
+#RewriteRule ^posteado-por/([a-zA-Z0-9-]*)/pagina/([0-9-]*)/?$ index.php?Contenido=posteado-por&nusuarioadmin=$1&textp=pagina&pagina=$2
+#RewriteRule ^agencias/pagina/([0-9-]*)/?$ index.php?Contenido=agencias&textp=pagina&pagina=$1
+
+RewriteRule ^propiedades/pagina/([0-9-]*)/?$ index.php?Contenido=propiedades&textp=pagina&pagina=$1
+#RewriteRule ^listado/([a-zA-Z0-9-]*)/?$ index.php?Contenido=listado&nusuario=$1
+#RewriteRule ^listado/([a-zA-Z0-9-]*)/pagina/([0-9-]*)/?$ index.php?Contenido=listado&nusuario=$1&textp=pagina&pagina=$2
