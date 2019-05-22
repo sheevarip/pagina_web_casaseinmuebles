@@ -24,8 +24,8 @@ $Contenido = $_GET['Contenido'];
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bolsa Inmobiliaria de Morelos</title>
-        <meta name="description" content="Bolsa Inmobiliaria de Morelos">
+        <title>Casas Inmuebles Morelos</title>
+        <meta name="description" content="Casas Inmuebles Morelos">
         <meta name="keyword" content="casas, compra, venta, inmobiliaria">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -148,7 +148,8 @@ $Contenido = $_GET['Contenido'];
 		<?php }else{
 			include("modulos/$Contenido.php");
 
-		}
+        }
+        
 		?>
 			
         <!-- Footer area-->
