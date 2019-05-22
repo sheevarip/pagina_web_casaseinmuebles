@@ -8,10 +8,10 @@ echo date('Y-m-d H:i:s');
 include_once('Conection/Conection.php');
 include_once('functions/functions.php');
 require('Conection/conexion.php');
-//$Contenido = $_GET['Contenido'];
+$Contenido = $_GET['Contenido'];
 
 $server = 'http://'.$_SERVER['SERVER_NAME'];
-$Contenido = $_GET['Contenido'];
+//$Contenido = $_GET['Contenido'];
 
 	
 

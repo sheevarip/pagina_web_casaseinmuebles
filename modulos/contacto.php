@@ -21,9 +21,9 @@ $contacto .='
                             <div class="row">
                                 <div class="col-sm-4">
                                     <h3><i class="fa fa-map-marker"></i> Dirección</h3>
-                                    <p>Insurgentes 866
-                                        <br>Col. Cuautlixco
-                                        <br>Cuautla, Morelos 
+                                    <p>
+                                        <br>
+                                        <br> 
                                         <br>
                                         <strong>México</strong>
                                     </p>
@@ -33,14 +33,14 @@ $contacto .='
                                     <h3><i class="fa fa-phone"></i>Llamanos</h3>
                                     <p class="text-muted">Gracias por ponerte en contacto con nosotros. Nos puedes
                                     llamar a nuestros telefonos, y te atenderemos lo más pronto posible</p>
-                                    <p><strong>01 735 212 0114</strong></p>
+                                    <p><strong>0</strong></p>
                                 </div>
                                 <!-- /.col-sm-4 -->
                                 <div class="col-sm-4">
                                     <h3><i class="fa fa-envelope"></i>Correo Electrónico</h3>
                                     <p class="text-muted">Otra forma de comunicarte con nosotros, es enviarnos a nuestros correos electronicos</p>
                                     <ul>
-                                        <li><strong><a href="mailto:">info@casasenventamorelosbim.com.mx.com</a></strong>   </li>
+                                        <li><strong><a href="mailto:"></a></strong>   </li>
                                         <li><strong><a href="#">Ticketio</a></strong> - our ticketing support platform</li>
                                     </ul>
                                 </div>

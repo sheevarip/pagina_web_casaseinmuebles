@@ -1,11 +1,5 @@
-[18-May-2019 18:20:16 UTC] PHP Notice:  Undefined index: Contenido in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 11
-[18-May-2019 18:20:16 UTC] PHP Notice:  Undefined index: Contenido in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 14
-[18-May-2019 18:20:16 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 35
-[18-May-2019 18:20:16 UTC] PHP Notice:  Undefined variable: login in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
-[18-May-2019 18:32:39 UTC] PHP Notice:  Undefined variable: error in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
-[18-May-2019 18:32:39 UTC] PHP Notice:  Undefined variable: login in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
-[18-May-2019 18:32:39 UTC] PHP Notice:  Undefined variable: error in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
-[18-May-2019 18:32:39 UTC] PHP Notice:  Undefined variable: login in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
-[18-May-2019 18:32:49 UTC] PHP Notice:  Undefined index: Contenido in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 11
-[18-May-2019 18:32:49 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 35
-[18-May-2019 18:32:49 UTC] PHP Notice:  Undefined variable: login in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
+[20-May-2019 13:09:28 America/Mexico_City] PHP Notice:  Undefined variable: error in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
+[20-May-2019 13:09:28 America/Mexico_City] PHP Notice:  Undefined variable: login in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38
+[20-May-2019 13:09:43 America/Mexico_City] PHP Notice:  Undefined index: Contenido in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 11
+[20-May-2019 13:09:43 America/Mexico_City] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/kw8vw0euhjqh/public_html/wcm/index.php on line 35
+[20-May-2019 13:09:43 America/Mexico_City] PHP Notice:  Undefined variable: login in /home/kw8vw0euhjqh/public_html/wcm/modulos/login.php on line 38

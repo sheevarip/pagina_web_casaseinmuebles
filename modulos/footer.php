@@ -11,10 +11,9 @@ $footer .='
                                 <img src="'.$server.'/assets/img/logo_largo.png" alt="" class="wow pulse" data-wow-delay="1s">
                                 <p>¿Quieres comprar o vender? Contactanos somos tu mejor opcion.</p>
                                 <ul class="footer-adress">
-                                    <li><i class="pe-7s-map-marker strong"> </i> Insurgentes 866 
-                                    Col. Cuautlixco Cuautla, Morelos Méxicor</li>
-                                    <li><i class="pe-7s-mail strong"> </i> info@casasenventamorelosbim.com.mx.com</li>
-                                    <li><i class="pe-7s-call strong"> </i> 01 735 212 0114</li>
+                                    <li><i class="pe-7s-map-marker strong"> </i>1.-</li>
+                                    <li><i class="pe-7s-mail strong"> </i> 2.-</li>
+                                    <li><i class="pe-7s-call strong"> </i> 3.-</li>
                                 </ul>
                             </div>
                         </div>
@@ -27,7 +26,7 @@ $footer .='
                                     <li><a href="#">Servicios</a>  </li> 
                                     
                                     <li><a href="'.$server.'/contacto">Contacto</a></li> 
-                                    <li><a href="'.$server.'/faq">fqa</a>  </li> 
+                                    <li><a href="'.$server.'/faq">faq</a>  </li> 
                                     <li><a href="'.$server.'/faq">Terminos y condiciones </a>  </li> 
                                 </ul>
                             </div>
@@ -118,7 +117,7 @@ foreach($men as $row){
                                 <div class="social pull-right"> 
                                     <ul>
                                         <li><a class="wow fadeInUp animated" href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="wow fadeInUp animated" href="https://www.facebook.com/BIMorelos/" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="wow fadeInUp animated" href="*" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
                                         <li><a class="wow fadeInUp animated" href="" data-wow-delay="0.3s"><i class="fa fa-google-plus"></i></a></li>
                                         <li><a class="wow fadeInUp animated" href="" data-wow-delay="0.4s"><i class="fa fa-instagram"></i></a></li>
                                         

@@ -2,7 +2,7 @@
  $footer_final .='
  <div class="row">
                         <div class="pull-left">
-                            <span> &copy; <a href="https://www.facebook.com/BIMorelos">BIMorelos</a> , Todos los derechos reservados  </span> 
+                            <span> &copy; <a>casaseinmueblesmorelos</a> , Todos los derechos reservados  </span> 
                         </div> 
                         <div class="bottom-menu pull-right"> 
                             <ul> 
