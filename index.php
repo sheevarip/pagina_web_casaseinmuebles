@@ -6,7 +6,7 @@ include_once("Conection/Conection.php");
 include_once("functions/functions.php");
 //require_once("functions/PHPPaging.lib.php");
 include("libs/Zebra_Pagination.php");
-$server = 'http://'.$_SERVER['SERVER_NAME'];
+$server = 'https://'.$_SERVER['SERVER_NAME'];
 $Contenido = $_GET['Contenido'];
 //$men = ExecuteQuery("SELECT * FROM menu");
 //foreach($men as $row){
