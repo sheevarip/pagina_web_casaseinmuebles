@@ -15,7 +15,6 @@ $Contenido = $_GET['Contenido'];
 //exit();
 
 ?>
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -28,13 +27,19 @@ $Contenido = $_GET['Contenido'];
         <meta name="description" content="Casas Inmuebles Morelos">
         <meta name="keyword" content="casas, compra, venta, inmobiliaria">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3603314517805704",
+    enable_page_level_ads: true
+  });
+</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script> 
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
 
         <!--Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="<?php echo $server;?>/assets/img/icono.ico" type="image/x-icon">
         <link rel="icon" href="<?php echo $server;?>/assets/img/icono.ico" type="image/x-icon">
 
