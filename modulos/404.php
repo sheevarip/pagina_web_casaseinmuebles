@@ -5,7 +5,7 @@ $error404.='  <div class="content-area error-page" style="background-color: #FCF
         <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
             <h2 class="error-title">404</h2>
             <p>La pagina a sido Movida</p>
-            <a href="index.html" class="btn btn-default">Home</a>                        
+            <a href="'.$server.'/inicio" class="btn btn-default">inicio</a>                        
         </div>
     </div> 
 </div>

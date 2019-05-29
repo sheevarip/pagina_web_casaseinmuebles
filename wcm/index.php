@@ -10,7 +10,7 @@ include_once('functions/functions.php');
 require('Conection/conexion.php');
 $Contenido = $_GET['Contenido'];
 
-$server = 'http://'.$_SERVER['SERVER_NAME'];
+$server = 'https://'.$_SERVER['SERVER_NAME'];
 //$Contenido = $_GET['Contenido'];
 
 	

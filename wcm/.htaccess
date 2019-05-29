@@ -63,8 +63,8 @@ Header append Vary User-Agent env=!dont-vary
 ExpiresActive on
 ExpiresDefault "access plus 6 months"
 
-ErrorDocument 404 http://casaseinmueblesmorelos.com/404/
-ErrorDocument 403 http://casaseinmueblesmorelos.com/403/
+ErrorDocument 404 https://casaseinmueblesmorelos.com/404/
+ErrorDocument 403 https://casaseinmueblesmorelos.com/403/
 ##ErrorDocument 403 /403.shtml
 ##ErrorDocument 404 /404.shtml
 ##ErrorDocument 500 /500.shtml
@@ -80,7 +80,7 @@ ErrorDocument 403 http://casaseinmueblesmorelos.com/403/
 
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^casaseinmueblesmorelos.com [NC]
-RewriteRule ^(.*)$ http://www.casaseinmueblesmorelos.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.casaseinmueblesmorelos.com/$1 [L,R=301]
 
 
 ##AddOutputFilterByType DEFLATE text/html text/plain text/xml

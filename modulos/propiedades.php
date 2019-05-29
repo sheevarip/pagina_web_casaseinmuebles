@@ -208,7 +208,7 @@ foreach($top as $rowt){
                             if(empty($Imagen))
                                 $Imagen = GetData(' foto_tmprincipal','propiedades','Id',$rowt['Id'],' && estado = 1 ');
 
-                            $Imagen = empty($Imagen) ? 'http://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'http://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
+                            $Imagen = empty($Imagen) ? 'https://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'https://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
                             $last = $cont%3 == 0 ? 'last' : '';
 
                                        $propiedades .='<li>
@@ -283,10 +283,10 @@ foreach($result as $row){
                                 $cont2 = $cont+1;
                             
                             $first = $cont == 1 || $cont == $cont2 ? 'first' : '';
-                            $Imagen = GetData('foto_principal','propiedades','Id',$row['Id'],'');
+                            $Imagen = GetData('foto_tmprincipal','propiedades','Id',$row['Id'],'');
                             if(empty($Imagen))
-                                $Imagen = GetData('foto_principal','propiedades','Id',$row['Id'],' && estado = 1 ');
-                            $Imagen = empty($Imagen) ? 'http://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'http://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
+                                $Imagen = GetData('foto_tmprincipal','propiedades','Id',$row['Id'],' && estado = 1 ');
+                            $Imagen = empty($Imagen) ? 'https://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'https://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
                             
                             $Garage = $row['estacionamientos'];
                             $Cama = $row['recamaras'];

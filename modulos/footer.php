@@ -47,7 +47,7 @@ foreach($men as $row){
                             if(empty($Imagen))
                                 $Imagen = GetData('foto_principal','propiedades','Id',$row['Id'],' && estado = 1 ');
 
-                            $Imagen = empty($Imagen) ? 'http://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'http://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
+                            $Imagen = empty($Imagen) ? 'https://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'https://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
                             $last = $cont%3 == 0 ? 'last' : '';
 
                                    $footer .=' <li>
