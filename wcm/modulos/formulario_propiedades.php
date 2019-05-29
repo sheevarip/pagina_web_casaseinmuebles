@@ -351,12 +351,12 @@ foreach($mend as $rowr){
                 
                   <div class="form-group" id="municipio" style="display:none;" >
                   <label>Selecciona el municipio: </label>
-                  <select class="form-control" name="municipio" id="municipio">';
+                  <select class="form-control" name="municipio" id="municipios">';
                   
                   
-                    $mena = ExecuteQuery("SELECT * FROM CIUDAD WHERE IdProvincia = 42 and Estado = 1");
+                    $mena = ExecuteQuery("SELECT * FROM municipios WHERE estado_id = 17 and activo = 1");
 			foreach($mena as $rowa){
-                    $formulario_propiedades .='<option>'.$rowa['Nombre'].'</option>';
+                    $formulario_propiedades .='<option>'.$rowa['nombre'].'</option>';
                   }
                   $formulario_propiedades .='</select>
                 </div>
