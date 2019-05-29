@@ -76,7 +76,7 @@ if($_POST['Func'] == 'insertar'){
 		$Class = 'alert alert-danger';
 	}else {
 	$Datos_inmuebles = GetData('*','inmueble','nombre',$inmueble,' && estado = 1');
- $Id_anuncio = ExecuteQuery("INSERT INTO propiedades (Id_usuarios,titulo,titulo_SEO,Id_oferta,Id_inmueble,clavebim,descripcion,recamaras,banos,superficie_terreno,superficie_construccion,niveles,estacionamientos,precio,municipio,colonia,direccion,disponible_desde,fecha,estado)
+ $Id_anuncio = ExecuteQuery("INSERT INTO propiedades (Id_usuarios,titulo,titulo_SEO,Id_oferta,Id_inmueble,clave,descripcion,recamaras,banos,superficie_terreno,superficie_construccion,niveles,estacionamientos,precio,municipio,colonia,direccion,disponible_desde,fecha,estado)
 	 VALUES ('".$sesion_usuarios."','".$titulo."','".$titulo_SEO."','".$oferta."','".$Datos_inmuebles['Id']."','".$clave."','".$descripcion."','".$recamara."','".$banos."','".$terrenos."','".$construccion."','".$niveles."','".$estacionamiento."','".$precio."','".$municipio."','".$colonia."','".$direccion."','".$fecha."','".date('Y-m-d H:i:s')."',1)");
 	 // "INSERT INTO propiedades (Id_usuarios,titulo,titulo_SEO,Id_oferta,Id_inmueble,clavebim,descripcion,recamaras,banos,superficie_terreno,superficie_construccion,niveles,estacionamientos,precio,municipio,colonia,direccion,disponible_desde,fecha,estado)
 	 //VALUES ('".$sesion_usuarios."','".$titulo."','".$titulo_SEO."','".$oferta."','".$Datos_inmuebles['Id']."','".$clave."','".$descripcion."','".$recamara."','".$banos."','".$terrenos."','".$construccion."','".$niveles."','".$estacionamiento."','".$precio."','".$municipio."','".$colonia."','".$direccion."','".$fecha."','".date('Y-m-d H:i:s')."',1)";
@@ -353,7 +353,7 @@ if($_POST['Func'] == 'insertar'){
     <section class="content-header">
       <h1>
         INICIO
-        <small>PANEL DE CONTROL BOLSA INMOBILIARIA DE MORELOS</small>
+        <small>PANEL DE CONTROL CASAS E INMUEBLES MORELOS</small>
       </h1>
      <!-- <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>

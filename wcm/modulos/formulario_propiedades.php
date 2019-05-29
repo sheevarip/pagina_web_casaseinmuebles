@@ -54,7 +54,7 @@ $formulario_propiedades ='
                    
                 </div>
                 <div class="form-group" id="clave" style="display:none;">
-                    <label for="">CLAVEBIM:</label>
+                    <label for="">CLAVE:</label>
                     <input type="text" class="form-control" name="clave"  >
                 </div>
                 
