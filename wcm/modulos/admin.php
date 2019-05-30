@@ -6,9 +6,9 @@ $sesion_usuarios = $_SESSION['id_usuario'];
 ini_set('memory_limit', '512M');
 date_default_timezone_set('America/Mexico_City');
 //echo date('Y-m-d H:i:s');
-include('../../Conection/Conection.php');
-include('../../functions/functions.php');
-include('../../functions/Resize.php');
+include_once('../../Conection/Conection.php');
+include_once('../../functions/functions.php');
+include_once('../../functions/Resize.php');
 
 if($_POST['Func'] == 'insertar'){
 	
@@ -182,7 +182,7 @@ if($_POST['Func'] == 'insertar'){
 								//@copy($destino, str_replace('/fotos','/fotos_tooltips',$destino));
 								ResizePhoto($destino,str_replace('/fotos','/fotos_tooltips',$carpetaDestino),$Fotosname,$Fotosname,'241');	
 
-								 ExecuteQuery("INSERT INTO propiedades(foto_principal,foto_tmprincipal,fotos)VALUES ('".$Datos_pr["Id"]."','".$destino."','".str_replace('/fotos','/fotos_tooltips',$carpetaDestino).$Fotosname."')");
+								 ExecuteQuery("INSERT INTO propiedades(foto_principal,foto_tmprincipal,fotos)VALUES ('".$Datos_pr["Id"]."','".$destino."','".str_replace('/fotos','/fotos_tooltips',$carpetaDestino).$Fotosname."') where Id = '".$Datos_pr["Id"]."'");
 								//echo ExecuteQuery("INSERT INTO propiedades(foto_principal,foto_tmprincipal) VALUES ('".$destino."','".str_replace('/fotos','/fotos_tooltips',$carpetaDestino).$Fotosname."') WHERE Id = '".$Datos_pr["Id"]."'");
 						
 							}else{
@@ -286,7 +286,7 @@ if($_POST['Func'] == 'insertar'){
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin BIM | ACCESO</title>
+  <title>Admin | ACCESO</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->

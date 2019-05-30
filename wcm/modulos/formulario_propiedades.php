@@ -19,7 +19,7 @@ $formulario_propiedades ='
             <!-- /.box-header -->
             <div class="box-body">
 
-              <form id="loginform" method="post" name="loginform" action="http://'.$_SERVER['SERVER_NAME'].'/wcm/modulos/admin.php" enctype="multipart/form-data">
+              <form id="loginform" method="post" name="loginform" action="https://'.$_SERVER['SERVER_NAME'].'/wcm/modulos/admin.php" enctype="multipart/form-data">
               
               <!--*****SELECT_INMUEBLE***-->
                <div class="form-group">

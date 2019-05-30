@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 //echo $id_usuario = $_SESSION['Id_usuario'];
 $Datos_us = GetData('*','usuarios','Id',$sesion_usuarios,' && estado = 1');
 
