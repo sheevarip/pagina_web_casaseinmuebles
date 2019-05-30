@@ -1,11 +1,11 @@
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined index: Func in /home/kw8vw0euhjqh/public_html/wcm/modulos/admin.php on line 13
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: encabezado in /home/kw8vw0euhjqh/public_html/wcm/modulos/encabezado.php on line 233
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: username in /home/kw8vw0euhjqh/public_html/wcm/modulos/username.php on line 13
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: search in /home/kw8vw0euhjqh/public_html/wcm/modulos/search.php on line 2
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: menu in /home/kw8vw0euhjqh/public_html/wcm/modulos/menu.php on line 3
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kw8vw0euhjqh/public_html/wcm/modulos/contenido_uno.php on line 2
-[29-May-2019 23:54:48 America/Mexico_City] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kw8vw0euhjqh/public_html/wcm/modulos/contenido_uno.php on line 33
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: Class in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: Error in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: Errorr in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
-[29-May-2019 23:54:48 America/Mexico_City] PHP Notice:  Undefined variable: Error_fp in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined index: Func in /home/kw8vw0euhjqh/public_html/wcm/modulos/admin.php on line 13
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: encabezado in /home/kw8vw0euhjqh/public_html/wcm/modulos/encabezado.php on line 233
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: username in /home/kw8vw0euhjqh/public_html/wcm/modulos/username.php on line 13
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: search in /home/kw8vw0euhjqh/public_html/wcm/modulos/search.php on line 2
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: menu in /home/kw8vw0euhjqh/public_html/wcm/modulos/menu.php on line 3
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kw8vw0euhjqh/public_html/wcm/modulos/contenido_uno.php on line 2
+[30-May-2019 14:56:18 America/Mexico_City] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kw8vw0euhjqh/public_html/wcm/modulos/contenido_uno.php on line 33
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: Class in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: Error in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: Errorr in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414
+[30-May-2019 14:56:18 America/Mexico_City] PHP Notice:  Undefined variable: Error_fp in /home/kw8vw0euhjqh/public_html/wcm/modulos/formulario_propiedades.php on line 414

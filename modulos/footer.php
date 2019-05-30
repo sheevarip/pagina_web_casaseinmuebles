@@ -43,9 +43,9 @@ foreach($men as $row){
                                 $cont2 = $cont+1;
                             
                             $first = $cont == 1 || $cont == $cont2 ? 'first' : '';
-                            $Imagen = GetData('foto_principal','propiedades','Id',$row['Id'],'&& estado = 1');
+                            $Imagen = GetData('fotos','foto_principal','Id_propiedad',$row['Id'],'');
                             if(empty($Imagen))
-                                $Imagen = GetData('foto_principal','propiedades','Id',$row['Id'],' && estado = 1 ');
+                                $Imagen = GetData('fotos','foto_principal','Id_propiedad',$row['Id']);
 
                             $Imagen = empty($Imagen) ? 'https://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'https://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
                             $last = $cont%3 == 0 ? 'last' : '';

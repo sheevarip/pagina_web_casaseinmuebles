@@ -182,7 +182,7 @@ if($_POST['Func'] == 'insertar'){
 								//@copy($destino, str_replace('/fotos','/fotos_tooltips',$destino));
 								ResizePhoto($destino,str_replace('/fotos','/fotos_tooltips',$carpetaDestino),$Fotosname,$Fotosname,'241');	
 
-								 ExecuteQuery("INSERT INTO propiedades(foto_principal,foto_tmprincipal,fotos)VALUES ('".$Datos_pr["Id"]."','".$destino."','".str_replace('/fotos','/fotos_tooltips',$carpetaDestino).$Fotosname."') where Id = '".$Datos_pr["Id"]."'");
+								 ExecuteQuery("INSERT INTO foto_principal(Id_propiedad,fotos,url_fotos)VALUES ('".$Datos_pr["Id"]."','".$destino."','".str_replace('/fotos','/fotos_tooltips',$carpetaDestino).$Fotosname."')" );
 								//echo ExecuteQuery("INSERT INTO propiedades(foto_principal,foto_tmprincipal) VALUES ('".$destino."','".str_replace('/fotos','/fotos_tooltips',$carpetaDestino).$Fotosname."') WHERE Id = '".$Datos_pr["Id"]."'");
 						
 							}else{
@@ -213,6 +213,7 @@ if($_POST['Func'] == 'insertar'){
 			if(!empty($Error || !empty($Error_fp))){
 				ExecuteQuery("DELETE FROM propiedades WHERE Id = '".$Datos_pr["Id"]."'");
 				ExecuteQuery("DELETE * FROM foto WHERE Id_propiedades = '".$Datos_pr["Id"]."'");
+				ExecuteQuery("DELETE * FROM foto_principal WHERE Id_propiedades = '".$Datos_pr["Id"]."'");
 			}else{			
 				
 				//ExecuteQuery("INSERT INTO propiedades(foto_principal)  SELECT fotos FROM foto WHERE Id_propiedades = propiedades(Id) AND Fecha= (SELECT MAX(Fecha) from foto)   LIMIT 1");

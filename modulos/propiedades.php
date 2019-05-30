@@ -204,9 +204,9 @@ foreach($top as $rowt){
                                 $cont2 = $cont+1;
                             
                             $first = $cont == 1 || $cont == $cont2 ? 'first' : '';
-                            $Imagen = GetData(' foto_tmprincipal','propiedades','Id',$rowt['Id'],'&& estado = 1');
+                            $Imagen = GetData('fotos','foto_principal','Id_propiedad',$row['Id'],'');
                             if(empty($Imagen))
-                                $Imagen = GetData(' foto_tmprincipal','propiedades','Id',$rowt['Id'],' && estado = 1 ');
+                                $Imagen = GetData('fotos','foto_principal','Id_propiedad',$row['Id']);
 
                             $Imagen = empty($Imagen) ? 'https://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'https://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
                             $last = $cont%3 == 0 ? 'last' : '';
@@ -283,9 +283,9 @@ foreach($result as $row){
                                 $cont2 = $cont+1;
                             
                             $first = $cont == 1 || $cont == $cont2 ? 'first' : '';
-                            $Imagen = GetData('foto_tmprincipal','propiedades','Id',$row['Id'],'');
+                            $Imagen = GetData('fotos','foto_principal','Id_propiedad',$row['Id'],'');
                             if(empty($Imagen))
-                                $Imagen = GetData('foto_tmprincipal','propiedades','Id',$row['Id'],' && estado = 1 ');
+                                $Imagen = GetData('fotos','foto_principal','Id_propiedad',$row['Id']);
                             $Imagen = empty($Imagen) ? 'https://'.$_SERVER['SERVER_NAME'].'/assets/img/' : 'https://'.$_SERVER['SERVER_NAME'].'/'.$Imagen;
                             
                             $Garage = $row['estacionamientos'];
@@ -307,7 +307,7 @@ $propiedades .='
                                             <h5><a href="'.$server.'/propiedad/'.$row['titulo_SEO'].'"> '.$row['titulo'].' </a></h5>
                                             <div class="dot-hr"></div>
 
-                                            <span class="pull-left"><b> Area :</b> '.$sum_area.'m </span>
+                                            <span class="pull-left"><b> Area :</b> '.$sum_area.'M<sup>2</sup> </span>
                                             <span class="proerty-price pull-right"> $ '.$row['precio'].'</span>
                                             <p style="display: none;">'.$row['descripcion'].'</p>
                                             <div class="property-icon">
