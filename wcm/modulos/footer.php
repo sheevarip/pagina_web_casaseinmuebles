@@ -1,8 +1,8 @@
 <?php 
 $footer ='  <div class="pull-right hidden-xs">
-      <b>PROGRAMADORES: </b> MARCO Y YERADANY
+      <b>PROGRAMADORES: </b> MARCO 
     </div>
-    <strong>BOLSA INMOBILIARIA DE MORELOS '.date('Y').'';
+    <strong>Casas e Inmuebles Morelos '.date('Y').'';
 
 echo $footer;
 

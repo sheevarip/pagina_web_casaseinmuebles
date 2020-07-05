@@ -6,7 +6,7 @@ include_once("Conection/Conection.php");
 include_once("functions/functions.php");
 //require_once("functions/PHPPaging.lib.php");
 include("libs/Zebra_Pagination.php");
-$server = 'https://'.$_SERVER['SERVER_NAME'];
+$server = 'http://'.$_SERVER['SERVER_NAME'];
 $Contenido = $_GET['Contenido'];
 //$men = ExecuteQuery("SELECT * FROM menu");
 //foreach($men as $row){
@@ -28,12 +28,7 @@ $Contenido = $_GET['Contenido'];
         <meta name="keyword" content="casas, compra, venta, inmobiliaria">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3603314517805704",
-    enable_page_level_ads: true
-  });
-</script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script> 
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->

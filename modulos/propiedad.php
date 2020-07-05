@@ -8,7 +8,7 @@ $propiedad .='
                     $Datos_prop = GetData('*','propiedades','titulo_SEO',$_GET['titulo'],' && estado = 1');
                     $Datos_asesor = GetData('*','usuarios','Id',$Datos_prop['Id_usuarios'],' && estado = 1');
                     $Datos_priv = GetData('*','privilegios','Id',$Datos_asesor['Id_privilegios'],' && estado = 1');
-                    $Datos_estado = GetData('*','oferta','Id',$Datos_prop['Id_oferta'],' && estado = 1');
+                    $Datos_estado = GetData('*','contrato','Id',$Datos_prop['Id_oferta'],' && estado = 1');
                    $Datos_fotos = GetData('*','fotos','Id_propiedades',$Datos_prop['Id'],' && Estado = 1');
                $Datos_amenidades = GetData('*','amenidades','Id_propiedades',$Datos_prop['Id'],' && estado = 1');
                
@@ -220,7 +220,7 @@ $propiedad .='
                                     
                                      <li>
                                         <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">DISPONIBLE DESDE</span>
-                                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">'.$Datos_prop['disponible_desde'].'</span>
+                                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">'.$Datos_prop['fecha'].'</span>
                                     </li> 
 
                                 </ul>
@@ -281,7 +281,7 @@ $propiedad .='
                                         <div class="clear">
                                             <div class="col-xs-4 col-sm-4 dealer-face">
                                                 <a href="">
-                                                    <img src="'.$server.'/assets/img/logo_bim.png" class="img-circle">
+                                                    <img src="'.$server.'/assets/img/client-face2.png" class="img-circle">
                                                 </a>
                                             </div>
                                             <div class="col-xs-8 col-sm-8 ">
@@ -345,7 +345,7 @@ $propiedad .='
 									}
                                         $propiedad .='<!--<li>
                                             <div class="col-md-3 col-sm-3  col-xs-3 blg-thumb p0">
-                                                <a href="'.$server.'/propiedad/'.$row['titulo_SEO'].'"><img src="'.$server.'/assets/img/demo/small-property-1.jpg"></a>
+                                                <a href="'.$server.'/propiedad/'.$row['titulo_SEO'].'"><img src="'.$server.'/'.$rowd['foto_principal'].'"></a>
                                                 <span class="property-seeker">
                                                     <b class="b-1">A</b>
                                                     <b class="b-2">S</b>

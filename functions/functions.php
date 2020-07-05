@@ -994,7 +994,7 @@ function editar_red($Id_usuario_agencia,$Url,$Red,$Activa,$Campo,$Campo_activar,
 		if(empty($Activa))
 			return '';
 		else
-			return '<span><a data-placement="bottom" data-toggle="tooltip" data-original-title="'.$RedUp.'" title="" href="https://'.$Url.'"><i class="fa fa-'.$RedLw.'"></i></a></span>';
+			return '<span><a data-placement="bottom" data-toggle="tooltip" data-original-title="'.$RedUp.'" title="" href="http://'.$Url.'"><i class="fa fa-'.$RedLw.'"></i></a></span>';
 	}
 }
 function sumar_visita_anuncio($Tabla,$Id_anuncio){
