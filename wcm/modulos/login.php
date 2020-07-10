@@ -9,7 +9,7 @@ $login .='
 <div class="login-box-body">
     <p class="login-box-msg">INGRESA TU USUARIO Y CONTRASEÑA</p>
 
-    <form id="loginform" method="post" name="loginform" action="https://'.$_SERVER['SERVER_NAME'].'/wcm/index.php">
+    <form id="loginform" method="post" name="loginform" action="http://'.$_SERVER['SERVER_NAME'].'/wcm/index.php">
       <div class="form-group has-feedback">
         <input type="text" id="usuario" name="usuario" pattern="[A-Za-z0-9_-]{1,15}" required class="form-control">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>

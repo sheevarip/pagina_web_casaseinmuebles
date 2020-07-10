@@ -1,8 +1,8 @@
 <?php
 session_start();
-ini_set('display_errors', '1');
+/* ini_set('display_errors', '1');
 date_default_timezone_set('America/Mexico_City');
-echo date('Y-m-d H:i:s');
+echo date('Y-m-d H:i:s'); */
 //Iniciamos la sesión
 
 include_once('Conection/Conection.php');
